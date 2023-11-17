@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>5-oy 7-dars</title>
+</head>
+
+<body>
+
+    <form id="form" class="createCarPlace">
+        <h1>Mashinangizni soting</h1>
+        <input type="text" name="CarName" id="CarName" placeholder="Mashinangizni nomini kiriting...">
+        <input type="number" name="CarYear" id="CarYear" placeholder="Mashinangizni yilini kiriting...">
+        <input type="text" name="CarColor" id="CarColor" placeholder="Mashinangizni rangini kiriting...">
+        <input type="text" name="CarPrice" id="CarPrice" placeholder="Mashinangizni narxini $ da kiriting...">
+
+        <input type="button" name="addCar" id="addCar" value="Sotuvga joylash">
+    </form>
+
+    <div class="container">
+        <form id="form">
+            <select name="name" id="nameSelect">
+                <option value="" disabled selected>Mashina turini tanlang</option>
+                <option value="BMW">BMW</option>
+                <option value="Mersedec">Mersedec</option>
+                <option value="Bugatti">Bugatti</option>
+                <option value="Lacetti">Lacetti</option>
+                <option value="Matiz">Matiz</option>
+                <option value="Tico">Tico</option>
+            </select>
+
+            <select name="year" id="yearSelect">
+                <option value="" disabled selected>Mashina yilini kiriting </option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <select name="status" id="statusSelect">
+                <option value="" disabled selected>Mashinaning holatini tanlang</option>
+                <option value="active">Sotilgan</option>
+                <option value="inactive">Sotilmagan</option>
+            </select>
+
+            <div class="searchPlace">
+                <input type="search" name="Search" id="carSearch" placeholder="Mashinani qidiring...">
+            </div>
+
+        </form>
+        <table id="table ">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>BMW</td>
+                    <td>2021</td>
+                    <td>Blue</td>
+                    <td>16.850 $</td>
+                    <td>Sotilgan</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Bugatti</td>
+                    <td>2020</td>
+                    <td>gray</td>
+                    <td>3.000.000 $</td>
+                    <td>Sotilmagan</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Mersedec</td>
+                    <td>2019</td>
+                    <td>Black</td>
+                    <td>32.625 $</td>
+                    <td>Sotilgan</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="./JavaScript/app.js" type="module"></script>
+</body>
+
+</html>
